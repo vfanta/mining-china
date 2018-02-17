@@ -83,7 +83,7 @@
         </section>
         <section class="feedback page__feedback">
             <div class="feedback__inner">
-                <form action="//formspree.io/vfanta1@gmail.com" method="POST" class="form feedback__form" role="form">
+                <form action="//formspree.io/vfanta1@gmail.com" method="POST" class="form feedback__form" role="form" id="contact-form">
                     <fieldset class="feedback__fieldset">
                         <legend class="feedback__form-name">Оставьте заявку и получите актуальную цену на сегодня</legend>
                         <div class="feedback__row">
@@ -110,6 +110,13 @@
                                 </span>
                             </label>
                         </div>
+                        <!-- CONFIG -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        <input type="hidden" name="_subject" value="Subject">
+                        <input type="hidden" name="_cc" value="email@cc.com">
+                        <!-- /CONFIG -->
+                        <input class="submit" type="submit" value="Send">
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
                         <div class="field-actions feedback__action">
                             <!--<button class="btn form__btn effect-one" type="submit">-->
                                 <!--<span class="effect-one__item"></span>-->
